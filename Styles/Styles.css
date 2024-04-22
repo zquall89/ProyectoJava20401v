@@ -1,0 +1,136 @@
+/*variables*/
+:root {
+    --violeta:  rgb(67, 4, 125);
+    --text-blanco: #ffffff;
+
+
+    
+}
+/*selector universal*/
+* {
+    font-family: "Ubuntu";
+    margin: 0;
+
+}
+/*fuentes */
+
+.ubuntu-light {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ubuntu-regular {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ubuntu-bold {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .ubuntu-light-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .ubuntu-regular-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .ubuntu-medium-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .ubuntu-bold-italic {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  /*main page*/ 
+
+
+.main_btm_reg{
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    background-color: var(--violeta);
+    color: var(--text-blanco);
+    border-radius: 10px;
+    border-color: #ffffff;
+
+}
+.main{
+    text-align: center;
+    background-image: url(../Imagenes/Fondo_de_web.jpg);
+    height: 75vh;
+    width: 100vw;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+
+}
+.main_text_blanco{
+    color: var(--text-blanco);
+    font-family: ub
+
+}
+.main_text_top{
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    font-size: 3em;
+    
+}
+.main_text_bot{
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+
+
+}
+.header{
+    
+    background-color: var(--violeta);
+}
+.header_logo{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    height: 10vh;
+    display: inline-block;
+    border: 1px solid black;
+    width: 45vw;
+    min-height: 10px;
+    color: var(--text-blanco);
+}
+.header_menu{
+    height: 10vh;
+    display: inline-block;
+    border: 1px solid black;
+    width: 45vw;
+    min-height: 10px;
+    padding-top: 3vh;
+    color: var(--text-blanco);
+
+}
+.header_menu a{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-decoration: none;
+    color: var(--text-blanco);
+
+
+}
