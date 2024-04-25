@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto</title>
     <!--favico-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../Imagenes/LogoAC/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../Imagenes/LogoAC/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../Imagenes/LogoAC/favicon-16x16.png">
-    <link rel="manifest" href="../Imagenes/LogoAC/site.webmanifest">
-    <link rel="mask-icon" href="../Imagenes/LogoAC/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="./Imagenes/LogoAC/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Imagenes/LogoAC/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Imagenes/LogoAC/favicon-16x16.png">
+    <link rel="manifest" href="./Imagenes/LogoAC/site.webmanifest">
+    <link rel="mask-icon" href="./Imagenes/LogoAC/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!--esto es CCS-->
@@ -23,14 +23,18 @@
 
         <header class="header">
             <div class="header_logo">
-                <a href="a" class="header_logo">
+                <a href="#" class="header_logo">
                     <i class="fa-solid fa-gamepad"></i>
                 Inicio
                 </a>
             </div >
             <div class="header_menu">
-                    <a href="./HTML/Formularios.html">Registrarse</a>
-                    <a href="./HTML/Sesion.html">Iniciar Sesión</a>                    
+                    <a href="./HTML/Formularios.html">
+                        Registrarse
+                    </a>
+                    <a href="./HTML/Sesion.html" id="Bot_inicio_s">
+                        Iniciar Sesión
+                    </a>                    
             </div>
         </header>
     
@@ -41,10 +45,29 @@
             <a class="main_btm_reg" href="./HTML/Formularios.html">Registrarse</a>
 
         </section>
+        <!--parte del buscador de abajo-->
+        <section class="buscador_abajo">
+            <h2>Que Juego estas Buscando?</h2>
+            <form>
+                <input type="search" 
+                placeholder="Buscar..." 
+                class="buscador">
+                <button class="boton_buscar">
+                    Buscar
+                </button>
+                </form>
+            <hr class="Linea">
 
     </main>
+    <a class="boton_up" href="#">
+    <i class="fa-solid fa-circle-chevron-up"></i>
+    </a>
 
     <script src="https://kit.fontawesome.com/4cf16ea6cb.js" crossorigin="anonymous"></script>
+
+    
+
+
     
 </body>
 </html>

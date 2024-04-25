@@ -3,39 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/Styles.css">
     <title>Inicio de Sesión</title>
 </head>
 <body>
     <header>
-        <h1>Inicio de Sesión</h1> 
+        
      </header>
-     <section>
-        <fieldset>
-            Iniciar Sesión
+     <main>
+     <section class="ini_sesion">
+        <fieldset class="campo_llenado">
+            <h1 class="text_ini_Ses ubuntu-light">Iniciar Sesión</h1>
             <form method="post">
                 <div>
-                    <label>Mail</label>
                     <input type="text"
+                        class="inp_mail"
                         name="mail"
-                        placeholder="email"
+                        placeholder="email" 
+                        class="int_mail"
                         required>
                 </div>
-                <label>password</label>
-                <input type="password"
+                    <input type="password"
+                    class="inp_pass"
                     name="password"
                     placeholder="contraseña"
                     minlength="8"
                     required>
                 </div>
                 <div>
-                <button>Iniciar Sesión</button>
+                    <button class="bot_ini_sesion ubuntu-medium Registro_ini">
+                        Iniciar Sesión
+                    </button>
                 </div>
                 <div>
-                    <a href="Formularios.html">Registrarse</a>
+                    <a 
+                    class="Registro_ini" 
+                    href="Formularios.html"
+                    ><h1 class="ubuntu-medium Registro_ini">Registrarse</h1>
+                    
+                    </a>
                 </div>
             </form>
         </fieldset>
      </section>
+    </main>
     
 </body>
 </html>

@@ -2,6 +2,11 @@
 :root {
     --violeta:  rgb(67, 4, 125);
     --text-blanco: #ffffff;
+    --fondo-form: rgb(68, 15, 117);
+    --fondo-texto: rgb(39, 5, 54);
+    --color-borde: rgb(41, 3, 61);
+
+
 
 
     
@@ -73,6 +78,7 @@
     color: var(--text-blanco);
     border-radius: 10px;
     border-color: #ffffff;
+    width: 20vw;
 
 }
 .main{
@@ -83,6 +89,9 @@
     min-height: 400px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 .main_text_blanco{
@@ -102,28 +111,25 @@
 
 
 }
-.header{
-    
+.header{    
     background-color: var(--violeta);
+    padding-top: 1vh;
+    padding-left: 3vw;
+    height: 8vh;
+    min-height: 40px;
+    /*agrego flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header_logo{
-    padding-left: 1vw;
-    padding-right: 1vw;
-    height: 10vh;
-    display: inline-block;
-    border: 1px solid black;
-    width: 45vw;
-    min-height: 10px;
-    color: var(--text-blanco);
+  text-decoration: none;
+   color: var(--text-blanco);
+   width: 45vw;
 }
 .header_menu{
-    height: 10vh;
-    display: inline-block;
-    border: 1px solid black;
-    width: 45vw;
-    min-height: 10px;
-    padding-top: 3vh;
     color: var(--text-blanco);
+    justify-content: flex-end;
 
 }
 .header_menu a{
@@ -131,6 +137,296 @@
     padding-right: 1vw;
     text-decoration: none;
     color: var(--text-blanco);
+    justify-content: flex-end;
 
+}
+#Bot_inicio_s{
+  padding: 1vh;
+  background: black;
+  border-radius: 10px;
 
+}
+
+/*Buscador de Abajo*/
+
+.buscador_abajo{
+    text-align: center;
+    height: 50vh;
+    background-color: rgb(186, 18, 18);
+    color: var(--text-blanco);
+    padding-top: 10vh;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+.buscador_abajo form{
+  display: inline-block;
+  padding-top: 5vh;
+}
+
+.buscador{
+  padding: 1.5vh;
+  border-radius: 15px;
+  width: 50vw;
+  border: none
+}
+
+.boton_buscar{
+  margin-left: 1vh;
+  padding: 1vh;
+  border-radius: 15px;
+  border: 1px solid white;
+  background-color: var(--violeta);
+  color: var(--text-blanco);
+  font-size: 1rem;
+}
+
+.boton_buscar:hover{
+  font-size: 1.2rem;
+}
+
+.Linea{
+  margin-top: 20vh;  
+  width: 50vw;
+  border: 0.5px solid var(--violeta);
+  display: flex;
+  
+}
+
+.boton_up{
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+}
+
+/*pagina de inicio de sesion*/
+
+.ini_sesion {
+  text-align: center;
+    background-image: url(../Imagenes/Fondo\ Incio\ de\ sesion.jpg);
+    height: 100vh;
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.campo_llenado {
+  margin-top: 20vh;
+  background-color: var(--fondo-form);
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+.bot_ini_sesion{
+  margin-top: 2vh;
+  margin-left: 1vh;
+  padding: 1vh;
+  border-radius: 15px;
+  border: 1px solid white;
+  background-color: rgb(73, 25, 73);
+  color: var(--text-blanco);
+  font-size: 1rem;
+  margin-bottom: 3vh;
+  
+}
+.bot_ini_sesion:hover{
+  font-size: 1.2rem;
+}
+
+.Registro_ini {
+  text-decoration: none;
+  color: var(--text-blanco);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 2vh;
+}
+.Registro_ini:hover{
+  font-size: 3vh;
+}
+
+.inp_mail{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 1.5vh;
+  border-radius: 15px;
+  width: 40vw;
+  border: none;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+.inp_pass{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 1.5vh;
+  border-radius: 15px;
+  width: 40vw;
+  border: none;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text_ini_Ses{
+  color: var(--text-blanco);
+  font-size: 2rem;
+
+}
+
+/* Formulario */
+
+.camp_registro{
+  text-align: center;
+    background-image: url(../Imagenes/Fondo\ Registro.jpg);
+    height: max-content;
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Campo_reg {
+  margin-top: 20vh;
+  background-color: var(--fondo-form);
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 20vh;
+}
+
+.inp_nombre{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 1.5vh;
+  border-radius: 15px;
+  border-color: var(--color-borde);
+  background-color: var(--fondo-texto);
+  width: 40vw;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inp_apellido{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 1.5vh;
+  border-radius: 15px;
+  border-color: var(--color-borde);
+  background-color: var(--fondo-texto);
+  width: 40vw;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inp_emailf{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 1.5vh;
+  border-radius: 15px;
+  border-color: var(--color-borde);
+  background-color: var(--fondo-texto);
+  width: 40vw;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inp_pww{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 1.5vh;
+  border-radius: 15px;
+  border-color: var(--color-borde);
+  background-color: var(--fondo-texto);
+  width: 40vw;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inp_date{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 1.5vh;
+  border-radius: 15px;
+  border-color: var(--color-borde);
+  background-color: var(--fondo-texto);
+  width: 40vw;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+}
+
+.inp_pais{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 1.5vh;
+  border-radius: 15px;
+  border-color: var(--color-borde);
+  background-color: var(--fondo-texto);
+  width: 40vw;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+}
+
+.registro_text{
+  color: var(--text-blanco);
+  font-size: 2rem;
+  margin-bottom: 3vh;
+}
+
+.T_C{
+  color: var(--text-blanco);
+  font-size: 0.8rem;
+}
+.terminos{
+  text-align: left;
+  
+}
+
+.bot_registro{
+    margin-top: 2vh;
+    margin-left: 1vh;
+    padding: 1vh;
+    border-radius: 15px;
+    border: 1px solid var(--color-borde);
+    background-color: rgb(73, 25, 73);
+    color: var(--text-blanco);
+    font-size: 1rem;
+    margin-bottom: 3vh;
+}
+
+.bot_reset{
+  margin-top: 2vh;
+  margin-left: 1vh;
+  padding: 1vh;
+  border-radius: 15px;
+  border: 1px solid var(--color-borde);
+  background-color: rgb(73, 25, 73);
+  color: var(--text-blanco);
+  font-size: 1rem;
+  margin-bottom: 3vh;
+  
+}
+
+.res_text{
+  font-size: 1rem;
+}
+
+.res_text:hover{
+  font-size: 1.1rem;
 }

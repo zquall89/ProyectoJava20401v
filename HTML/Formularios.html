@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formualarios</title>
+    <title>Registro</title>
+    <link rel="stylesheet" href="../Styles/Styles.css">
 </head>
 <body>
     <header>
-       <h1>Formularios</h1> 
+       
     </header>
 
     <main>
         <!--Formulario registro-->
-        <section>
-            <fieldset>
-                <legend>Registro</legend>
+        <section class="camp_registro">
+            <fieldset class="Campo_reg">
+                <h1 class="registro_text ubuntu-light">Registro</h1>
                 <form>
                     <!--Varios Tipos-->
                     <div>
-                        <label for="nombre">Nombre</label>
-                        <input maxlength="10" 
+                        
+                        <input class="inp_nombre"
+                               maxlength="10" 
                                id="nombre" 
                                placeholder="Nombre"
                                name="nombre"
@@ -27,8 +29,9 @@
                     </div>
 
                     <div>
-                        <label for="apellido">Apellido</label>
-                        <input  maxlength="15" 
+                        
+                        <input  class="inp_apellido"
+                                maxlength="15" 
                                 id="apellido" 
                                 placeholder="Apellido"
                                 name="apellido"
@@ -37,16 +40,18 @@
                     </div>
 
                     <div>
-                        <label for="email">Email</label>
-                        <input  maxlength="15" 
+                        
+                        <input  class="inp_emailf" 
+                                maxlength="15" 
                                 id="email" 
                                 placeholder="Email"
                                 name="email"
                                 required>
                     </div>
                     <div>
-                        <label for="contraseña">Contraseña</label>
-                        <input  type="password"
+                        
+                        <input  class="inp_pww"
+                                type="password"
                                 maxlength="15"
                                  minlength="8"
                                  id="contraseña" 
@@ -54,16 +59,19 @@
                                  required>
                     </div>  
                     <div>
-                        <label for="Fecha de nacimiento">Fecha de Nacimiento</label>
-                        <input  type="date" 
+                        
+                        <input  class="inp_date"
+                                type="date" 
                                 id="Fecha de nacimiento"
                                 name="Fecha"
                                 required>
                     </div>
                     <div>
-                        <label for="Pais">País</label>
+                        
                             <select name="Pais" id="pais"
+                                    class="inp_pais"
                                     required>
+                                <option value="País">País</option>
                                 <option value="Arg">Argentina</option>
                                 <option value="Bol">Bolivia</option>
                                 <option value="Bra">Brasil</option>
@@ -76,20 +84,20 @@
                                 <option value="Ven">Venezuela</option>
                             </select>
                     </div>
-                    <div>
-                        <label for="T.C">Acepto Términos y condiciones</label>
-                               
-                               <input type="checkbox"
-                               value="SI">
-                               
+                    <div class="terminos">
+                        <input class="check"
+                        type="checkbox"
+                        value="SI">                          
+                        <label class="T_C ubuntu-light">Acepto Términos y condiciones</label>                               
 
                     </div>
                     <div>
-                        <button>
-                            Registrarse
+                        <button class="bot_registro">
+                            <h1 class="ubuntu-regular res_text">Registrarse</h1>
                         </button>
-                        <button type="reset">
-                            RESET
+                        <button class="bot_reset"
+                            type="reset">
+                            <h1 class="ubuntu-regular res_text">RESET</h1>
                         </button>
 
 
